@@ -6,7 +6,7 @@
 }
 
 .header {
-    background-color: rgb(192, 191, 235);
+    background-color: #92e0ff;
     text-align: center;
     border-bottom: 1px solid #f0f0f0;
     margin-bottom: 20px;
@@ -25,7 +25,7 @@
 }
 
 .common-btns.ant-btn {
-    background-color: rgb(111, 111, 213);
+    background-color: #5adbb5;
     color: #fff;
 }
 
@@ -65,7 +65,7 @@ button:hover {
 }
 
 Button.selected {
-    background-color: #4caf50 !important;
+    background-color: #33b249 !important;
     color: #fff !important;
 }
 
