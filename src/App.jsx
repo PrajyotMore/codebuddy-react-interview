@@ -1,7 +1,9 @@
-import Router from "./Router";
+import TeatherBookingSeats from "./pages/TeatherBookingSeats";
 
 function App() {
-  return <Router />;
+  return (
+    <TeatherBookingSeats/>
+  );
 }
 
 export default App;
