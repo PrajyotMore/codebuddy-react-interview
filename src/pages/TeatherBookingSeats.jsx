@@ -19,7 +19,7 @@ const TeatherBookingSeats = () => {
       setLoading(false);
       handleSeats(numberRows);
     }, 1000);
-  }, [numberRows]);
+  }, []);
 
   // Function for Fetching seats
   const handleSeats = async (row) => {

@@ -6,7 +6,7 @@
 }
 
 .header {
-    background-color:rgb(192 191 235);
+    background-color: rgb(192, 191, 235);
     text-align: center;
     border-bottom: 1px solid #f0f0f0;
     margin-bottom: 20px;
@@ -19,16 +19,17 @@
     border-top: 1px solid #f0f0f0;
 }
 
-.number-of-rows{
+.number-of-rows {
     width: 100px;
     margin: 0 10px;
 }
+
 .common-btns.ant-btn {
     background-color: rgb(111, 111, 213);
     color: #fff;
 }
 
-.custom-spinner{
+.custom-spinner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,9 +40,30 @@
     flex-direction: column;
     align-items: center;
 }
-.row{
-    margin: 0 0 10px 10px;
+
+.pyramid{
+    margin-top: 20px;
 }
+
+.row {
+    margin: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
 Button.selected {
     background-color: #4caf50 !important;
     color: #fff !important;
@@ -54,14 +76,15 @@ Button[disabled] {
 }
 
 .btn-submit-seats {
-   display: flex;
-   justify-content: center;
-    margin-top: 20px
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
+
 .total-cost {
     display: flex;
-   justify-content: center;
-    margin-top: 10px
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .spinner-container {
