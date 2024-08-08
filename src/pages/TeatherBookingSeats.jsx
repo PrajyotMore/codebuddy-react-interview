@@ -14,25 +14,22 @@ const TeatherBookingSeats = () => {
   const [loading,setLoading] = useState(false);
 
   // useEffect Initialization
-  // useEffect(()=> {
-  //   setLoading(true)
-  //   setTimeout(()=> {
-  //     setLoading(false)
-  //     handleSeats(numberRows);
-  //   },1000)
-  // },[numberRows])
+  useEffect(()=> {
+    setLoading(true)
+    setTimeout(()=> {
+      setLoading(false)
+      handleSeats(numberRows);
+    },1000)
+  },[numberRows])
 
  
  // Function for Fetching seats
  const handleSeats = async (row) => {
-  setLoading(true);
   try {
     const response = await axios.get(`https://codebuddy.review/seats?count=${row}`);
     setSeats(response.data);
-    setLoading(false);
   } catch (error) {
     console.error("Error fetching the seats:", error);
-    setLoading(false);
   }
 };
 
@@ -80,6 +77,7 @@ const TeatherBookingSeats = () => {
     setLoading(false);
   };
 
+  // rendering JSX
   return (
       <div className="container">
       {
@@ -117,7 +115,6 @@ const TeatherBookingSeats = () => {
                   <Row key={index} gutter={[16, 16]} justify="center" className="row">
                     {Array.from({ length: index + 1 }, (_, seatIndex) => {
                       const seatNumber = (index * (index + 1)) / 2 + seatIndex + 1;
-                      console.log('setno',seatNumber)
                       const isReserved = isPrimeNumberSeats(seatNumber);
                       return (
                         <Col key={seatNumber}>
